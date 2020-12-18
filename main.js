@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, Dialog } = require('electron');
 let win;
 const appUrl = `file://${__dirname}/index.html`;
 
@@ -8,7 +8,7 @@ function createWindow()
         width: 800,
         height: 600,
         resizable: false,
-        frame: true,
+        frame: false,
         transparent: false,
         webPreferences: {
             nodeIntegration: true
